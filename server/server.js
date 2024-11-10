@@ -6,6 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('OCR Web App Server');
+})
+
 app.post('/extract', (req, res) => {
   let { text } = req.body;
 
