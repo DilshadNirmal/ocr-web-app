@@ -1,0 +1,39 @@
+.App {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .content {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+  }
+
+  .image-column, .text-column {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 2rem;
+    padding: 20px;
+    text-align: center;
+    min-height: 300px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
