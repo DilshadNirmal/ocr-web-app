@@ -13,7 +13,7 @@ function App() {
   };
 
   const convertImageToText = async () => {
-    console.log('conversion function engaged....');
+    // console.log('conversion function engaged....');
 
     Tesseract.recognize(image, 'eng', { logger: (m) => console.log(m) })
       .then(({ data: { text } }) => {
@@ -33,7 +33,7 @@ function App() {
         body: JSON.stringify({ text }),
       });
       const data = await response.json();
-      console.log('Extracted Data:', data);
+    //   console.log('Extracted Data:', data);
       setExtractedData(data);
     } catch (error) {
       console.error('Error sending text to backend:', error);
