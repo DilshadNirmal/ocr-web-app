@@ -1,0 +1,5 @@
+{
+    "routes": [
+      { "src": "/api/extract", "dest": "/api/extract.js" }
+    ]
+  }
